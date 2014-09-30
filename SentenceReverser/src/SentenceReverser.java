@@ -1,7 +1,6 @@
 import java.util.Scanner;
 
 public class SentenceReverser {
-
 	public static void main(String[] args) {
 		String[] outputs = new String[100];
 		String input, output = "";
@@ -12,9 +11,8 @@ public class SentenceReverser {
 		sc.close();
 		
 		outputs = input.split("\\s");
-		for(String s: outputs) output = s+output;
+		for(String s: outputs) output = s+" "+output;
 		
 		System.out.println(output);
 	}
-
 }
